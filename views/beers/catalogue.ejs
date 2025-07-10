@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+<body>
+    <h1>Our Beer Catalogue, <%=  user.username %>!</h1>
+
+<ul>
+       
+    <% beers.forEach(beer => { %>
+        <li>
+            <div class="box">  
+            <strong><%= beer.name %></strong> - <%= beer.type %> - $<%= beer.price.toFixed(2) %>
+            <p><em><%= beer.description %></em></p>
+            <form action="/orders" method="POST">
+            <input class="input"  type="hidden" name="beerId" value="<%= beer._id %>">
+            <label class="label"  for="quantity-<%= beer._id %>">Quantity:</label>
+            <input class="input"  type="number" id="Quantity-<%= beer._id %>" name="quantity" min="1" value="1">
+            <button class="button is-primary mb-2"   type="submit">Add to Order</button>
+        </form>
+        </li>
+        <% }) %>
+
+
+</ul>
+
+</body>
+</html>

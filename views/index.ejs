@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+<body class="has-background-light">
+    <%- include("./partials/_navbar.ejs") %>
+   
+    <h1 class="title is-2 has-text-weight-bold has-text-dark">
+        Welcome to the beer app!
+    </h1>
+    <section class="section">
+    <div class="container has-text-centered">
+    <div class="buttons is-centered mt-4">       
+        <a href="/auth/sign-in" class="button is-link">Sign In</a>
+        <a href="/auth/sign-up" class="button is-primary">Sign Up</a>
+       
+    </div>
+    </div>
+    </section>
+    
+    
+</body>
+</html>

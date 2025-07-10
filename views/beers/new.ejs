@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+<body>
+    <%- include("../partials/_navbar.ejs") %>
+    <a href="/beers">View Our Catalogue</a>
+    <form action="/beers" method="POST"> 
+
+        <label class="label" for="name">name:</label>  
+        <input class="input"  type="text" name="name" id="name" /> 
+        <label class="label"  for="abv">abv:</label> 
+        <input class="input"  type="abv" name="abv" id="abv" /> 
+        <label class="label"  for="description">Beer Description:</label> 
+        <textarea class="textarea" id="description" name="description" maxlength="300" rows="5" cols="40"></textarea> 
+        <label class="label"  for="type">Beer Type:</label> 
+        <div class="select">
+        <select name="type" id="type"> 
+        <option value="">Select a type</option> 
+        <option value="lager">Lager</option> 
+        <option value="ale">Ale</option> 
+        <option value="stout">Stout</option> 
+        <option value="ipa">Ipa</option> 
+        <option value="pilsner">Pilsner</option> 
+        </select> 
+        </div>
+        <label class="label"  for="price">Price ($):</label> 
+        <input  class="input"
+        type="number" 
+        id="price" 
+        name="price" 
+        min="0" 
+        step="0.01" 
+        placeholder="Enter beer price" 
+        /> 
+        <button class="button is-primary mb-2"  type="submit">Submit</button> 
+        </form> 
+</body>
+</html>

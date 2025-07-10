@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("../partials/_navbar.ejs") %>
+    <h1>Welcome to the beer app, <%=  user.username %>!</h1>
+    <div class="buttons">
+    <a href="/beers" class="button is-info">View Our Catalogue</a>
+    <a href="/orders" class="button is-primary ml-2">View past Orders</a>
+    </div>
+</body>
+</html>

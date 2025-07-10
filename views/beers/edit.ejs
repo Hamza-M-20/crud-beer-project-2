@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your Order</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+<body>
+    <%- include("../partials/_navbar.ejs") %>
+    <h1>Editing Your Order</h1>
+    <form  action="/orders/<%= order._id %>?_method=PUT" method="POST">
+        <p><Strong>Beer:</Strong> <%= order.beers[0].name %></p>
+        <p>Price per unit: $<%= order.beers[0].price.toFixed(2) %></p>
+        <label class="label"  for="quantity">quantity:</label>
+        <input class="input"
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        value="<%= order.quantity %>"
+        >
+        <button class="button is-primary mb-2"   type="submit">Update Order</button>
+    </form>
+    <a href="/orders">Back to orders</a>
+</body>
+</html>
