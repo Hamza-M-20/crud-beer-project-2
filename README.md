@@ -5,6 +5,7 @@ SUMMARY OF THE PROJECT
 A full stack web ordering app where users can sign up, browse beers, create new ones , edit their order, update it and also delete anything they dont want. built using node.js, Express, MongoDB, and EJS.
 
 FEATURES
+
 User authentication(log-in, sign-up, and sign-out)
 Browse beer catalogue
 Add beers to the catalogue by Admin or user creates an order 
@@ -13,6 +14,7 @@ View past orders
 Edit and delete orders
 
 Technologies used.
+
 Node.js
 Express
 MongoDB and Mongoose
@@ -26,8 +28,8 @@ dotenv
 Vs code
 
 Getting started
-clone the repo. git clone 
-
+clone the repo. git clone [
+](https://github.com/Hamza-M-20/crud-beer-project-2.git)
 Setting up the enviroment variables
 Install dependencies npm install
 create a .env file and add 
@@ -47,6 +49,7 @@ View all orders and either edit or delete them.
 signout when done.
 
 USER STORIES
+
 .As a user i want to be able to sign up easily for an account.
 .As a user i should be able to create my order and update it
 .As a user i should be able to login /logout securely so my account is
@@ -62,6 +65,7 @@ can easily view and order what i want with names, prices and images.
 
 
 STRETCH GOALS
+
 .Add beer reviews and ratings.
 .Search/filter catalogue by price, name or type.
 .Prevent the user from ordering if the Beer is out of stock.
