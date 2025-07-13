@@ -9,10 +9,15 @@ A full stack web ordering app where users can sign up, browse beers, create new 
 FEATURES
 
 User authentication(log-in, sign-up, and sign-out)
+
 Browse beer catalogue
+
 Add beers to the catalogue by Admin or user creates an order 
+
 Place a new order
+
 View past orders
+
 Edit and delete orders
 
 Technologies used.
@@ -31,14 +36,17 @@ Vs code
 
 Getting started
 
-clone the repo. git clone [
-](https://github.com/Hamza-M-20/crud-beer-project-2.git)
+clone the repo. git clone (https://github.com/Hamza-M-20/crud-beer-project-2.git)
 
 Setting up the enviroment variables
+
 Install dependencies npm install
+
 create a .env file and add 
+
 MONGODB_URI=
 SECRET_SESSION=
+
 create a .gitignore file
 
 Run the app using nodemon server.js
@@ -48,8 +56,11 @@ Open in the browser using http://localhost:3000
 USAGE
 
 Visit the welcome page. sign-in if you already have an account or sign-up
+
 View our catalogue once you sign-in or view your past orders
+
 Place an order by selecting beer(s) and quantity.
+
 View all orders and either edit or delete them.
 signout when done.
 
